@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SayHeyKey</title>
+    <link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/WoBG.png"
+      style="border-radius: 100%"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2aa358f165.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <span id="siteseal"
+      ><script
+        async
+        type="text/javascript"
+        src="https://seal.godaddy.com/getSeal?sealID=rf7q3E1CGhcpo4FNh53ZkorNOK6WxZhehRQgzDWsVBYlqSIHPvPhhdoXRShN"
+      ></script>
+    </span> -->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/SayHeyKeyLogo.jpeg" alt="" class="logo" />
+          <ul id="sideMenu">
+            <li class="navItems">
+              <a href="#about" class="navLinks">about</a>
+            </li>
+            <li class="navItems">
+              <a href="#services" class="navLinks">services</a>
+            </li>
+            <li class="navItems">
+              <a href="#contact" class="navLinks">contact</a>
+            </li>
+            <li class="navItems">
+              <a
+                href="https://wa.me/919600590106"
+                target="_blank"
+                class="btnLink"
+              >
+                <button class="btnNav">
+                  <img src="assets/whatsapp-icon.svg" alt="" class="waIcon" />
+                  <p class="btnText">book now</p>
+                </button>
+              </a>
+            </li>
+            <i class="fas fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i
+            class="fas fa-bars"
+            style="color: #ffffff"
+            onclick="openMenu()"
+          ></i>
+        </nav>
+        <div class="heroText">
+          <p class="subText">The Divine Portal</p>
+          <h2 class="heroHeading">SayHeyKey</h2>
+          <p class="desc">
+            Unlock the Mysteries of Life with<br />
+            sayHeyKey and experience the soulful path of healing and empowerment
+          </p>
+          <span class="social">
+            <a
+              href="https://wa.me/919600590106"
+              target="_blank"
+              class="socialLink"
+              id="whatsapp"
+            >
+              <img
+                src="assets/whatsapp-icon.svg"
+                alt=""
+                class="socialIcon"
+                id="waIcon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/say_hey_key/"
+              target="_blank"
+              class="socialLink"
+              id="instagram"
+            >
+              <img
+                src="assets/instagram.svg"
+                alt=""
+                class="socialIcon"
+                id="igIcon"
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <h1 class="aboutHeadingMain">About Me</h1>
+        <div class="row">
+          <div class="aboutCol1">
+            <!-- <h1 class="aboutHeading">About Me</h1> -->
+            <p class="aboutPara">
+              I am Shradha A Jain, founder and holistic healer of SayHeyKey- The
+              Divine Portal. I have been practicing professionally and learning
+              different types of healings since 2019.<br /><br />
+              Being a born empath, spirituality has always been an integral part
+              of who I am. I find joy in constant growth and the profound
+              connections I make while working with diverse and powerful
+              energies.<br /><br />
+              I consider it a privilege to be able to facilitate the spiritual
+              growth and transformation of others. It's a profound honour to
+              guide individuals on their personal journeys, helping them connect
+              with powerful energies, find inner balance, and discover their
+              true potential.
+            </p>
+          </div>
+          <div class="aboutCol2">
+            <img
+              src="assets/Honey_SnapShaotcropped.png"
+              alt=""
+              class="aboutImg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="servicesHeading">Services</h1>
+        <div class="servicesList" onclick="displayText()">
+          <div id="reiki" class="serve" onclick="displayText()">
+            <!-- <img src="assets/Frame 20reiki.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading">Reiki</h2>
+            <div class="cardDesc">
+              Ignite Your Inner Healing Power with Reiki: Experience profound
+              balance and relaxation through ancient energy healing techniques.
+              Book your transformative session today.
+            </div>
+          </div>
+          <div id="tarot">
+            <!-- <img src="assets/tarotfinal.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading" class="serve" onclick="displayText()">
+              Tarot Card
+            </h2>
+            <div class="cardDesc">
+              Unlock the Secrets of Your Destiny: Gain insight, clarity, and
+              guidance through the ancient art of Tarot. Discover the hidden
+              truths that lie within and navigate your path with confidence.
+              Book your empowering Tarot Card reading now.
+            </div>
+          </div>
+          <div id="crystals" class="serve" onclick="displayText()">
+            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading">Crystals</h2>
+            <div class="cardDesc">
+              Embrace Crystal Energy: Immerse in transformative vibrations that
+              harmonize your being. Embark on a journey of holistic wellness
+              through Crystal Healing. Book your session now and experience the
+              power of crystals.
+            </div>
+          </div>
+          <div id="angel" class="serve" onclick="displayText()">
+            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading">Angel Card</h2>
+            <div class="cardDesc">
+              Seek Divine Guidance: Embrace angelic wisdom and find solace in
+              uplifting messages. Book your enlightening Angel Card reading to
+              invite celestial guidance into your life.
+            </div>
+          </div>
+          <div id="num" class="serve" onclick="displayText()">
+            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading">Numerology</h2>
+            <div class="cardDesc">
+              Decode Life's Mysteries: Explore ancient Numerology to uncover
+              hidden patterns and gain insights into your purpose,
+              relationships, and personality. Book now for an illuminating
+              session that brings clarity to your path.
+            </div>
+          </div>
+          <div id="angelHeal" class="serve" onclick="displayText()">
+            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
+            <h2 class="cardHeading">Angel Healing</h2>
+            <div class="cardDesc">
+              Embrace Divine Healing: Allow the gentle touch of angelic energy
+              to nurture and uplift your soul. Experience profound healing as
+              celestial beings guide and support your journey. Awaken your inner
+              light and book your transformative Angel Healing session today.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h2 class="contactHeading">Contact</h2>
+        <div class="cards">
+          <div class="contactCard" id="one">
+            <a href="https://www.instagram.com/say_hey_key/" target="_blank"
+              >Check SayHeyKey Out on Instagram</a
+            >
+          </div>
+          <div class="contactCard" id="two">
+            <a href="https://wa.me/919600590106" target="_blank"
+              >Book A Session Now!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p class="footerText">
+        made with 💖 by
+        <a
+          href="https://kshypjn.notion.site/Kashyap-J-c03f24b8877d473b9f45c3e3bd5931cf?pvs=4"
+          target="_blank"
+          >kshyp</a
+        >
+      </p>
+    </div>
+  </body>
+  <script>
+    var sideMenu = document.getElementById("sideMenu");
+    var desc = document.getElementsByClassName("cardDesc");
+    var heading = document.getElementsByClassName("cardHeading");
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+
+    function displayText() {
+      desc.style.display = "block";
+      heading.style.display = "none";
+    }
+  </script>
+</html>
