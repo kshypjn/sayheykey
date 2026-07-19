@@ -1,262 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SayHeyKey</title>
-    <link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/WoBG.png"
-      style="border-radius: 100%"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/2aa358f165.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <span id="siteseal"
-      ><script
-        async
-        type="text/javascript"
-        src="https://seal.godaddy.com/getSeal?sealID=rf7q3E1CGhcpo4FNh53ZkorNOK6WxZhehRQgzDWsVBYlqSIHPvPhhdoXRShN"
-      ></script>
-    </span> -->
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="assets/SayHeyKeyLogo.jpeg" alt="" class="logo" />
-          <ul id="sideMenu">
-            <li class="navItems">
-              <a href="#about" class="navLinks">about</a>
-            </li>
-            <li class="navItems">
-              <a href="#services" class="navLinks">services</a>
-            </li>
-            <li class="navItems">
-              <a href="#contact" class="navLinks">contact</a>
-            </li>
-            <li class="navItems">
-              <a
-                href="https://wa.me/919600590106"
-                target="_blank"
-                class="btnLink"
-              >
-                <button class="btnNav">
-                  <img src="assets/whatsapp-icon.svg" alt="" class="waIcon" />
-                  <p class="btnText">book now</p>
-                </button>
-              </a>
-            </li>
-            <i class="fas fa-xmark" onclick="closeMenu()"></i>
-          </ul>
-          <i
-            class="fas fa-bars"
-            style="color: #ffffff"
-            onclick="openMenu()"
-          ></i>
-        </nav>
-        <div class="heroText">
-          <p class="subText">The Divine Portal</p>
-          <h2 class="heroHeading">SayHeyKey</h2>
-          <p class="desc">
-            Unlock the Mysteries of Life with<br />
-            sayHeyKey and experience the soulful path of healing and empowerment
-          </p>
-          <span class="social">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SayHeyKey — The Divine Portal</title>
+  <meta name="description" content="SayHeyKey — The Divine Portal. Reiki, Tarot, Crystal Healing, Angel Cards, Numerology and Angel Healing sessions with holistic healer Shradha A Jain." />
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SayHeyKey — The Divine Portal" />
+  <meta property="og:description" content="Unlock the mysteries of life with soulful healing: Reiki, Tarot, Crystals, Angel Cards, Numerology and Angel Healing." />
+  <meta property="og:image" content="assets/SayHeyKeyLogo.jpeg" />
+  <meta property="og:url" content="https://sayheykey.in/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/png" href="assets/WoBG.png" />
+
+  <!-- Fonts: a serif display face for headings, a warm serif for body copy, a condensed sans for labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Fjalla+One&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand">
+        <img src="assets/SayHeyKeyLogo.jpeg" alt="SayHeyKey logo" class="brand__logo" />
+        <span class="brand__name">SayHeyKey</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list" id="navList">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__cta-item">
+            <a href="https://wa.me/919600590106" target="_blank" rel="noopener" class="btn btn--primary btn--small">
+              <img src="assets/whatsapp-icon.svg" alt="" class="btn__icon" />
+              Book now
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="navList"
+      >
+        <svg class="nav-toggle__icon nav-toggle__icon--open" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="nav-toggle__icon nav-toggle__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="5" y1="5" x2="19" y2="19"></line>
+          <line x1="19" y1="5" x2="5" y2="19"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__orbit" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="hero__orbit-svg">
+          <circle cx="300" cy="300" r="260" class="hero__ring hero__ring--outer" />
+          <circle cx="300" cy="300" r="190" class="hero__ring hero__ring--mid" />
+          <circle cx="300" cy="300" r="120" class="hero__ring hero__ring--inner" />
+          <circle cx="300" cy="40" r="5" class="hero__spark" />
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow">The Divine Portal</p>
+        <h1 class="hero__heading">SayHeyKey</h1>
+        <p class="hero__desc">
+          Unlock the mysteries of life with SayHeyKey and experience the soulful
+          path of healing and empowerment.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/919600590106" target="_blank" rel="noopener" class="btn btn--primary">
+            <img src="assets/whatsapp-icon.svg" alt="" class="btn__icon" />
+            Book a session
+          </a>
+          <span class="hero__social">
             <a
               href="https://wa.me/919600590106"
               target="_blank"
-              class="socialLink"
-              id="whatsapp"
+              rel="noopener"
+              class="social-link"
+              aria-label="Message SayHeyKey on WhatsApp"
             >
-              <img
-                src="assets/whatsapp-icon.svg"
-                alt=""
-                class="socialIcon"
-                id="waIcon"
-              />
+              <img src="assets/whatsapp-icon.svg" alt="" class="social-link__icon" />
             </a>
             <a
               href="https://www.instagram.com/healwithshradha"
               target="_blank"
-              class="socialLink"
-              id="instagram"
+              rel="noopener"
+              class="social-link"
+              aria-label="Visit SayHeyKey on Instagram"
             >
-              <img
-                src="assets/instagram.svg"
-                alt=""
-                class="socialIcon"
-                id="igIcon"
-              />
+              <img src="assets/instagram.svg" alt="" class="social-link__icon" />
             </a>
           </span>
         </div>
       </div>
-    </div>
-    <!-- About -->
-    <div id="about">
-      <div class="container">
-        <h1 class="aboutHeadingMain">About Me</h1>
-        <div class="row">
-          <div class="aboutCol1">
-            <!-- <h1 class="aboutHeading">About Me</h1> -->
-            <p class="aboutPara">
-              I am Shradha A Jain, founder and holistic healer of SayHeyKey- The
-              Divine Portal. I have been practicing professionally and learning
-              different types of healings since 2019.<br /><br />
-              Being a born empath, spirituality has always been an integral part
-              of who I am. I find joy in constant growth and the profound
-              connections I make while working with diverse and powerful
-              energies.<br /><br />
-              I consider it a privilege to be able to facilitate the spiritual
-              growth and transformation of others. It's a profound honour to
-              guide individuals on their personal journeys, helping them connect
-              with powerful energies, find inner balance, and discover their
-              true potential.
-            </p>
-          </div>
-          <div class="aboutCol2">
-            <img
-              src="assets/Honey_SnapShaotcropped.png"
-              alt=""
-              class="aboutImg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- services -->
-    <div id="services">
-      <div class="container">
-        <h1 class="servicesHeading">Services</h1>
-        <div class="servicesList" onclick="displayText()">
-          <div id="reiki" class="serve" onclick="displayText()">
-            <!-- <img src="assets/Frame 20reiki.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading">Reiki</h2>
-            <div class="cardDesc">
-              Ignite Your Inner Healing Power with Reiki: Experience profound
-              balance and relaxation through ancient energy healing techniques.
-              Book your transformative session today.
-            </div>
-          </div>
-          <div id="tarot">
-            <!-- <img src="assets/tarotfinal.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading" class="serve" onclick="displayText()">
-              Tarot Card
-            </h2>
-            <div class="cardDesc">
-              Unlock the Secrets of Your Destiny: Gain insight, clarity, and
-              guidance through the ancient art of Tarot. Discover the hidden
-              truths that lie within and navigate your path with confidence.
-              Book your empowering Tarot Card reading now.
-            </div>
-          </div>
-          <div id="crystals" class="serve" onclick="displayText()">
-            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading">Crystals</h2>
-            <div class="cardDesc">
-              Embrace Crystal Energy: Immerse in transformative vibrations that
-              harmonize your being. Embark on a journey of holistic wellness
-              through Crystal Healing. Book your session now and experience the
-              power of crystals.
-            </div>
-          </div>
-          <div id="angel" class="serve" onclick="displayText()">
-            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading">Angel Card</h2>
-            <div class="cardDesc">
-              Seek Divine Guidance: Embrace angelic wisdom and find solace in
-              uplifting messages. Book your enlightening Angel Card reading to
-              invite celestial guidance into your life.
-            </div>
-          </div>
-          <div id="num" class="serve" onclick="displayText()">
-            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading">Numerology</h2>
-            <div class="cardDesc">
-              Decode Life's Mysteries: Explore ancient Numerology to uncover
-              hidden patterns and gain insights into your purpose,
-              relationships, and personality. Book now for an illuminating
-              session that brings clarity to your path.
-            </div>
-          </div>
-          <div id="angelHeal" class="serve" onclick="displayText()">
-            <!-- <img src="assets/crystalsFinal.png" alt="" class="cardImg" /> -->
-            <h2 class="cardHeading">Angel Healing</h2>
-            <div class="cardDesc">
-              Embrace Divine Healing: Allow the gentle touch of angelic energy
-              to nurture and uplift your soul. Experience profound healing as
-              celestial beings guide and support your journey. Awaken your inner
-              light and book your transformative Angel Healing session today.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <h2 class="contactHeading">Contact</h2>
-        <div class="cards">
-          <div class="contactCard" id="one">
-            <a href="https://www.instagram.com/healwithshradha" target="_blank"
-              >Check SayHeyKey Out on Instagram</a
-            >
-          </div>
-          <div class="contactCard" id="two">
-            <a href="https://wa.me/919600590106" target="_blank"
-              >Book A Session Now!</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p class="footerText">
-        made with 💖 by
-        <a
-          href="https://kshypjn.notion.site/Kashyap-J-c03f24b8877d473b9f45c3e3bd5931cf?pvs=4"
-          target="_blank"
-          >kshyp</a
-        >
-      </p>
-    </div>
-  </body>
-  <script>
-    var sideMenu = document.getElementById("sideMenu");
-    var desc = document.getElementsByClassName("cardDesc");
-    var heading = document.getElementsByClassName("cardHeading");
-    function openMenu() {
-      sideMenu.style.right = "0";
-    }
-    function closeMenu() {
-      sideMenu.style.right = "-200px";
-    }
+    </section>
 
-    function displayText() {
-      desc.style.display = "block";
-      heading.style.display = "none";
-    }
-  </script>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__media">
+          <img src="assets/Honey_SnapShaotcropped.png" alt="Shradha A Jain, founder of SayHeyKey" class="about__img" />
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow">The healer behind the portal</p>
+          <h2 class="section-heading">About Me</h2>
+          <p class="about__para">
+            I am Shradha A Jain, founder and holistic healer of SayHeyKey — The
+            Divine Portal. I have been practicing professionally and learning
+            different types of healing since 2019.
+          </p>
+          <p class="about__para">
+            Being a born empath, spirituality has always been an integral part
+            of who I am. I find joy in constant growth and the profound
+            connections I make while working with diverse and powerful
+            energies.
+          </p>
+          <p class="about__para">
+            I consider it a privilege to be able to facilitate the spiritual
+            growth and transformation of others. It's a profound honour to
+            guide individuals on their personal journeys, helping them connect
+            with powerful energies, find inner balance, and discover their
+            true potential.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Six paths to balance</p>
+          <h2 class="section-heading">Services</h2>
+        </div>
+
+        <div class="services__grid" id="servicesGrid">
+
+          <article class="card" id="reiki">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="6"></circle><circle cx="24" cy="24" r="14"></circle><circle cx="24" cy="24" r="21"></circle></svg>
+              </span>
+              <span class="card__heading">Reiki</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Ignite your inner healing power with Reiki: experience profound
+                balance and relaxation through ancient energy healing techniques.
+                Book your transformative session today.
+              </p>
+            </div>
+          </article>
+
+          <article class="card" id="tarot">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="14" y="6" width="20" height="30" rx="2"></rect><path d="M24 14l3 6 6 1-4.5 4.5L29.5 32 24 28.5 18.5 32l1-6.5L15 20l6-1z"></path></svg>
+              </span>
+              <span class="card__heading">Tarot Card</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Unlock the secrets of your destiny: gain insight, clarity, and
+                guidance through the ancient art of Tarot. Discover the hidden
+                truths that lie within and navigate your path with confidence.
+                Book your empowering Tarot Card reading now.
+              </p>
+            </div>
+          </article>
+
+          <article class="card" id="crystals">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M14 10h20l7 11-17 17-17-17z"></path><path d="M14 10l3 11-3 0M34 10l-3 11 3 0M17 21h14M24 10v11M24 21l-7 17M24 21l7 17"></path></svg>
+              </span>
+              <span class="card__heading">Crystals</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Embrace crystal energy: immerse in transformative vibrations
+                that harmonize your being. Embark on a journey of holistic
+                wellness through crystal healing. Book your session now and
+                experience the power of crystals.
+              </p>
+            </div>
+          </article>
+
+          <article class="card" id="angel">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M24 34V16"></path><path d="M24 18c-4-8-12-10-18-8 2 8 8 14 18 14"></path><path d="M24 18c4-8 12-10 18-8-2 8-8 14-18 14"></path></svg>
+              </span>
+              <span class="card__heading">Angel Card</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Seek divine guidance: embrace angelic wisdom and find solace in
+                uplifting messages. Book your enlightening Angel Card reading
+                to invite celestial guidance into your life.
+              </p>
+            </div>
+          </article>
+
+          <article class="card" id="num">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M8 24c0-8 5-13 8-13s4 4 0 9-8 8-8 13 4 6 8 4 8-9 8-13 4-13 8-13 8 5 8 13-5 13-8 13"></path></svg>
+              </span>
+              <span class="card__heading">Numerology</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Decode life's mysteries: explore ancient numerology to uncover
+                hidden patterns and gain insights into your purpose,
+                relationships, and personality. Book now for an illuminating
+                session that brings clarity to your path.
+              </p>
+            </div>
+          </article>
+
+          <article class="card" id="angelHeal">
+            <button class="card__trigger" aria-expanded="false">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6"></circle><path d="M24 20v14"></path><path d="M24 24c-5-6-13-7-18-4 2 7 9 11 18 9"></path><path d="M24 24c5-6 13-7 18-4-2 7-9 11-18 9"></path></svg>
+              </span>
+              <span class="card__heading">Angel Healing</span>
+              <span class="card__plus" aria-hidden="true"></span>
+            </button>
+            <div class="card__panel">
+              <p class="card__desc">
+                Embrace divine healing: allow the gentle touch of angelic
+                energy to nurture and uplift your soul. Experience profound
+                healing as celestial beings guide and support your journey.
+                Awaken your inner light and book your transformative Angel
+                Healing session today.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">Reach out</p>
+        <h2 class="section-heading section-heading--light">Contact</h2>
+
+        <div class="contact__cards">
+          <a href="https://www.instagram.com/healwithshradha" target="_blank" rel="noopener" class="contact-card">
+            <img src="assets/instagram.svg" alt="" class="contact-card__icon" />
+            <span>Check SayHeyKey out on Instagram</span>
+          </a>
+          <a href="https://wa.me/919600590106" target="_blank" rel="noopener" class="contact-card">
+            <img src="assets/whatsapp-icon.svg" alt="" class="contact-card__icon" />
+            <span>Book a session now!</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">
+      made with 💖 by
+      <a href="https://instagram.com/sportlight.fun" target="_blank" rel="noopener">kshyp</a>
+    </p>
+  </footer>
+
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="script.js"></script>
+</body>
 </html>
